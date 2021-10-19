@@ -1,9 +1,9 @@
 # analytical workflows : coding demo
 #
-# additional info about the code useful to 
+# additional info about the code useful to
 # collaborators or future self:
 #
-# in this case, generate some data and do 
+# in this case, generate some data and do
 # linear regression and make a figure
 
 
@@ -21,7 +21,7 @@ m <- 2.2
 b <- 1.1
 
 x <- rnorm(n = n, mean = 0, sd = 1)     #indep. var
-noise <- rnorm(n = n, mean = 0, sd = 1)   
+noise <- rnorm(n = n, mean = 0, sd = 1)
 y <- m * x + b + noise                  #dep. var
 
 #plot(x, y)   #debug plot
@@ -39,18 +39,13 @@ fit <- glm(y ~ x)
 
 par(mar = c(6,7,4,1))
 
-plot(x, y, 
-     xlab = "Normalized velocity", 
+plot(x, y,
+     xlab = "Normalized velocity",
      ylab = "Normalized\nenergy consumption")
-     
+
 abline(fit)
 
 
+# making a conflict on remote
 
-
-
-
-
-
-
-
+local_conflict = True
